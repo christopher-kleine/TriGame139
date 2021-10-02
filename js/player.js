@@ -1,6 +1,6 @@
 export const player = ({ player, enemy }) => ({
     attackSword: {
-        text: '${player} whirls his sword through the air and strikes.',
+        text: `${player} whirls his sword through the air and strikes.`,
         result: {
             miss: ['dodgeRight', 'dodgeLeft', 'duck'],
             critical: ['big'],

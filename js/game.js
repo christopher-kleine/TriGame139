@@ -5,8 +5,8 @@ import { history, intro } from "./actions.js"
 
 app({
     init: {
-        pName: "The Red Baron",
-        eName: "The Devil of Tokyo",
+        player: "The Red Baron",
+        enemy: "The Devil of Tokyo",
         history: [
             { name: "attackSword", result: "miss" }
         ]
