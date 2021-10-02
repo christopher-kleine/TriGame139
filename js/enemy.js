@@ -1,1 +1,7 @@
-export const enemy = {}
+export const enemy = ({ player, enemy }) => ({
+
+
+
+
+
+})
