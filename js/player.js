@@ -1,86 +1,90 @@
 export const player = ({ player, enemy }) => ({
-
-  attackSword:{
-      text: 'The player whirls his sword through the air and strikes.',
-      resutl: {
-          miss: ['dodge right', 'dodge left', 'duck'],
-          critical: 'big'],
-          hit: 'big']
-      },
-      damageFrom: 20,
-      damageTo: 50
-  },
-  attackBareHands:{
+    attackSword: {
+        text: '${player} whirls his sword through the air and strikes.',
+        result: {
+            miss: ['dodgeRight', 'dodgeLeft', 'duck'],
+            critical: ['big'],
+            hit: ['big']
+        },
+        damageFrom: 20,
+        damageTo: 50,
+        short: ""
+    },
+    attackBareHands: {
         text: 'red',
-        resutl: {
+        result: {
             miss: 'big',
             critical: true,
             hit: 5
         },
         damageFrom: 20,
-        damageTo: 50
-  },
-  attackFoot:{
+        damageTo: 50,
+        short: ""
+    },
+    attackFoot: {
         text: 'red',
-        resutl: {
+        result: {
             miss: 'big',
             critical: true,
             hit: 5
         },
         damageFrom: 20,
-        damageTo: 50
-  },
-  attackGun:{
+        damageTo: 50,
+        short: ""
+    },
+    attackGun: {
         text: 'red',
-        resutl: {
+        result: {
             miss: 'big',
             critical: true,
             hit: 5
         },
         damageFrom: 20,
-        damageTo: 50
-  },
-  attackJumpKick:{
+        damageTo: 50,
+        short: ""
+    },
+    attackJumpKick: {
         text: 'red',
-        resutl: {
+        result: {
             miss: 'big',
             critical: true,
             hit: 5
         },
         damageFrom: 20,
-        damageTo: 50
-  },
-  attackSmashBareHands:{
+        damageTo: 50,
+        short: ""
+    },
+    attackSmashBareHands: {
         text: 'red',
-        resutl: {
+        result: {
             miss: 'big',
             critical: true,
             hit: 5
         },
         damageFrom: 20,
-        damageTo: 50
-  },
-  attackStompEarthQuacke:{
+        damageTo: 50,
+        short: ""
+    },
+    attackStompEarthQuacke: {
         text: 'red',
-        resutl: {
+        result: {
             miss: 'big',
             critical: true,
             hit: 5
         },
         damageFrom: 20,
-        damageTo: 50
-  },
-  attackScratch:{
+        damageTo: 50,
+        short: ""
+    },
+    attackScratch: {
         text: 'The ${state.pName}',
-        resutl: {
+        result: {
             miss: 'big',
             critical: true,
             hit: 5
         },
         damageFrom: 20,
-        damageTo: 50
-  },
-
-
-
-  })
+        damageTo: 50,
+        short: ""
+    },
+})

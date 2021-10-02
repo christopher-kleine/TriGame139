@@ -1,16 +1,19 @@
 import { app } from "https://unpkg.com/hyperapp"
 import { main, h1, button, text } from "https://unpkg.com/@hyperapp/html?module"
 
-import { player } from "./player.js"
-import { enemy } from "./enemy.js"
-import { intro } from "./actions.js"
+import { history, intro } from "./actions.js"
 
 app({
     init: {
         pName: "The Red Baron",
         eName: "The Devil of Tokyo",
-        actions: []
+        history: [
+            { name: "attackSword", result: "miss" }
+        ]
     },
-    view: (state) => intro(state),
+    view: (state) => main({}, [
+        intro(state),
+        history(state)
+    ]),
     node: document.getElementById("app"),
 })
